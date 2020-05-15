@@ -1,3 +1,4 @@
+//title section styles
 .title-container{
 
     .flex();
@@ -36,3 +37,32 @@
 
 
 }//closes .title-container
+
+//artist section styles
+.artists-container{
+    .flex(@align:self-end);
+
+    .artist{
+        .flex();
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+
+        img{
+            width: 300px;
+            height: 250px;
+            margin-bottom: 3%;
+            border-radius: 3%;
+        }//closes img
+
+        a{
+            margin: 2%;
+        }//closes a
+
+        .bio{
+            padding: 3% 5%;
+            font-size: 1.5rem;
+            text-align: center;
+        }//closes .bio
+    }
+}//closes .artists-container
