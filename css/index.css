@@ -6,6 +6,10 @@
     Creates a left and right border around a container 
     Default is 2px, solid black
 */
+/*
+    Creates a bottom border around a container 
+    Default is 2px, solid silver
+*/
 html,
 body,
 div,
@@ -102,7 +106,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 h2 {
   font-size: 3.2rem;
@@ -141,4 +145,37 @@ nav a:nth-child(2) {
   border-left: 2px solid black;
   border-right: 2px solid black;
   padding: 0 1%;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 2px solid silver;
+  margin-bottom: 3%;
+}
+.title-container .title-button {
+  background-image: url('../assets/home.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  margin: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.title-container .title-button .title {
+  width: 100%;
+}
+.title-container .title-button .title h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+.title-container .title-button .title-button {
+  width: 100%;
 }
