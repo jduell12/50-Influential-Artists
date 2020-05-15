@@ -28,14 +28,27 @@
             }//closes h1
         }//closes title
 
-        .title-button{
-            width: 100%;
-        }//closes .title-button
+        button{
+            .custom-btn(150px, white, black);
 
+            @media @mobile{
+                width: 80px;
+                padding: 5%;
+                font-size: .75rem;
+                height: 20px;
+                border-radius: 10%;
+                margin-top: 5%;
+            }
+        }
+
+        @media @mobile{
+            height: 250px;
+            margin: 0;
+        }
         
     }//closes .title-button
 
-
+    
 }//closes .title-container
 
 //artist section styles
@@ -53,6 +66,11 @@
             height: 250px;
             margin-bottom: 3%;
             border-radius: 3%;
+
+            @media @mobile{
+                width: 150px;
+                height: 125px;
+            }
         }//closes img
 
         a{
@@ -63,6 +81,22 @@
             padding: 3% 5%;
             font-size: 1.5rem;
             text-align: center;
+
+            @media @mobile{
+                margin-bottom: 5%;
+                font-size: .75rem;
+                padding: 0 20%;
+            }
         }//closes .bio
+
+        @media @mobile{
+            width: 100%;
+        }
+    }//closes .artist
+
+    @media @mobile{
+        flex-direction: column;   
+        align-content: center;
+        justify-content: center;
     }
 }//closes .artists-container
