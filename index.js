@@ -259,10 +259,19 @@ function lotsOfArt(artistArray){
 
    let painted = [];
 
+   for(let i = 0; i < artistArray.length; i++){
+     if(artistArray[i].paintings > 100){
+       painted.push(artistArray[i].name);
+     }
+   }
+   return painted;
   }
 
+  // console.log(lotsOfArt(artists));
 
-/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
+
+/* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. 
+Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
 
 id: 21
 name: Your Name Here, 
@@ -271,13 +280,24 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(infoArray, artistArray){
 
-    /* Code here */
+    let info = {
+      id: infoArray[0],
+      name: infoArray[1],
+      years: infoArray[2],
+      genre: infoArray[3],
+      nationality: infoArray[4],
+      bio: infoArray[5]
+    };
+
+    artistArray.push(info);
 
   }
 
-
+  // addArtist([21, "Jessica", "1990-2020", "Web Design", "Polish/Hungarian", "lorem ipsum blah blah blah"], artists);
+  // console.log(artists[artists.length-1]);
+  // console.log(artists);
 
 
 
