@@ -13,7 +13,6 @@
         height: 500px;
         margin: 2%;
         width: 100%;
-
         .flex();
         flex-wrap: wrap;
         flex-direction: column;
@@ -31,6 +30,10 @@
         button{
             .custom-btn(150px, white, black);
 
+            @media @med-mobile{
+                margin-top: 5%;
+            }
+
             @media @mobile{
                 width: 80px;
                 padding: 5%;
@@ -39,6 +42,10 @@
                 border-radius: 10%;
                 margin-top: 5%;
             }
+        }
+
+        @media @med-mobile{
+            height: 300px;
         }
 
         @media @mobile{
@@ -66,6 +73,11 @@
             height: 250px;
             margin-bottom: 3%;
             border-radius: 3%;
+
+            @media @med-mobile{
+                width: 175px;
+                height: 140px;
+            }
 
             @media @mobile{
                 width: 150px;
