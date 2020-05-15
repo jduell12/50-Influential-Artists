@@ -9,9 +9,10 @@
 }
 
 /*
-    Creates a left border around a container 
+    Creates a left and right border around a container 
     Default is 2px, solid black
 */
-.top-border(@size:2px, @style:solid, @color:black){
-    border-top: @size @style @color;
+.left-right-border(@size:2px, @style:solid, @color:black){
+    border-left: @size @style @color;
+    border-right: @size @style @color;
 }
