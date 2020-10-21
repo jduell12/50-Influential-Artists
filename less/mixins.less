@@ -1,0 +1,44 @@
+/* 
+    Creates a flex container 
+    Default is to center as a flex row but can be changed with arguments
+*/
+.flex(@justify:center, @align:center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+/*
+    Creates a left and right border around a container 
+    Default is 2px, solid black
+*/
+.left-right-border(@size:2px, @style:solid, @color:black){
+    border-left: @size @style @color;
+    border-right: @size @style @color;
+}
+
+/*
+    Creates a bottom border around a container 
+    Default is 2px, solid silver
+*/
+.bottom-border(@size:2px, @style:solid, @color:silver){
+    border-bottom: @size @style @color
+}
+
+/*
+    Creates a button that can be changed
+    Default is 150px wide, color is white and text is black
+    rounded borders and height is 45px
+*/
+.custom-btn(@width:200px, @bg-color:white, @txt-color:black){
+    display:block;
+    width: @width;
+    background-color: @bg-color;
+    margin: 3%, 0;
+    color: @txt-color;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 0;
+    box-shadow: 0 16px 20px 0 rgba(0,0,0,0.2), 0 10px 20px 0 rgba(0,0,0,0.19);
+}

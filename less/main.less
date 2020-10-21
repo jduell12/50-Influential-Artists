@@ -1,0 +1,114 @@
+//title section styles
+.title-container{
+
+    .flex();
+    flex-wrap: wrap;
+    .bottom-border();
+    margin-bottom: 3%;
+
+    .title-button{
+        background-image: url('../assets/home.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 500px;
+        margin: 2%;
+        width: 100%;
+        .flex();
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        .title{
+            width: 100%;
+            h1{
+                color: @title-color;
+                width: 100%;
+                text-align: center;
+                font-weight: bold;
+            }//closes h1
+        }//closes title
+
+        button{
+            .custom-btn(150px, white, black);
+
+            @media @med-mobile{
+                margin-top: 5%;
+            }
+
+            @media @mobile{
+                width: 80px;
+                padding: 5%;
+                font-size: .75rem;
+                height: 20px;
+                border-radius: 10%;
+                margin-top: 5%;
+            }
+        }
+
+        @media @med-mobile{
+            height: 300px;
+        }
+
+        @media @mobile{
+            height: 250px;
+            margin: 0;
+        }
+        
+    }//closes .title-button
+
+    
+}//closes .title-container
+
+//artist section styles
+.artists-container{
+    .flex(@align:self-end);
+
+    .artist{
+        .flex();
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+
+        img{
+            width: 300px;
+            height: 250px;
+            margin-bottom: 3%;
+            border-radius: 3%;
+
+            @media @med-mobile{
+                width: 175px;
+                height: 140px;
+            }
+
+            @media @mobile{
+                width: 150px;
+                height: 125px;
+            }
+        }//closes img
+
+        a{
+            margin: 2%;
+        }//closes a
+
+        .bio{
+            padding: 3% 5%;
+            font-size: 1.5rem;
+            text-align: center;
+
+            @media @mobile{
+                margin-bottom: 5%;
+                font-size: .75rem;
+                padding: 0 20%;
+            }
+        }//closes .bio
+
+        @media @mobile{
+            width: 100%;
+        }
+    }//closes .artist
+
+    @media @mobile{
+        flex-direction: column;   
+        align-content: center;
+        justify-content: center;
+    }
+}//closes .artists-container
